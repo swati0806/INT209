@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>register</title>
+  <link rel="stylesheet" type="text/css" href="register.css">
+</head>
+
+<body>
+  <header>
+    <h1 class="t1"> HOPE </h1>
+    <h1 class="t2"> Registration Form <h1>
+        <div class="tab">
+        </div>
+        <div class="form">
+          <form method=POST name="myform" onsubmit="return valid()">
+            <b>First Name - </b><input type="text" name="t1" placeholder="First Name" />
+            <b> Last Name - </b><input type="text" name="t2" placeholder="Last Name" /><br><br>
+            <b>Gender - </b><input type="radio" id="g1" name="g">Male</input> <b>
+              <input type="radio" id="g2" name="g">Female</input> <br><br>
+              <b>Phone - </b><input type="number" id="t4" /><b>Age -</b><input type="text" id="t3" /><br><br>
+              <b>Address -</b><textarea rows="5" cols="40" id="ta"></textarea><br><br>
+              <b>Email id -</b><input type="text" id="t5" placeholder="some@gmail.com" /><b>Aadhar Card No - </b><input
+                type="number" id="t6" /><b><br><br>
+                <b>Any Medical complication -</b><textarea rows="3" cols="40" id="ta"></textarea><br><br>
+                <b>Select peroid during which u want shot from -</b><input type="date" /><b> to -</b><input
+                  type="date" /><br><br>
+                <input type="checkbox" id="cb" />All the above details filled by me is correct according to
+                my knowledge.<br><br>
+                <input type="submit" value="REGISTER" />
+          </form>
+
+
+
+
+
+
+          <script>
+            function valid() {
+              var a = document.forms["myform"]["t1"].value; var b = document.forms["myform"]["t2"].value; var c = document.forms["myform"]["t3"].value;
+              var d = document.forms["myform"]["t4"].value; var e = document.forms["myform"]["t5"].value; var f = document.forms["myform"]["t6"].value;
+              if (a == "") {
+                alert("field cant be empty");
+                return false;
+              }
+              if (b == "") {
+                alert("field cant be empty");
+                return false;
+              }
+              if (c == "") {
+                alert("field cant be empty");
+                return false;
+              } if (d == "") {
+                alert("field cant be empty");
+                return false;
+              } if (e == "") {
+                alert("field cant be empty");
+                return false;
+              } if (f == "") {
+                alert("field cant be empty");
+                return false;
+              }
+
+              alert("Sucessfully Submitted, Appointment Date will be send to you through mail");
+            }
+          </script>
+        </div>
+        <a href="" class="bn">Home</a>
+  </header>
+</body>
+
+</html>
